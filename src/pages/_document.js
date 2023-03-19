@@ -3,9 +3,13 @@ import { Html, Head, Main, NextScript } from 'next/document'
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <link rel="stylesheet" href="../../scss/custom.css" />
+      </Head>
       <body>
-        <Main />
+        <div className="container">
+          <Main />
+        </div>
         <NextScript />
       </body>
     </Html>
